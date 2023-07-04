@@ -1,0 +1,11 @@
+.header {
+  padding-top: 1.5625rem;
+  padding-bottom: 0.4375rem;
+  min-height: 5.6875rem;
+  border-bottom: 1px solid $greyColor;
+
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+}

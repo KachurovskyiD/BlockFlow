@@ -1,0 +1,90 @@
+@@include('./header.html', { 'title': 'Start' })
+
+<div class="state">
+  <div class="container">
+    <div class="state__wrapper">
+      <ul class="state__list">
+        <li class="state__item done">
+          <div class="state__item-circle"></div>
+          <div class="state__item-title">Стан1</div>
+        </li>
+        <li class="state__item done">
+          <div class="state__item-circle"></div>
+          <div class="state__item-title">Стан2</div>
+        </li>
+        <li class="state__item preparing">
+          <div class="state__item-circle"></div>
+          <div class="state__item-title">Стан3</div>
+        </li>
+        <li class="state__item waiting">
+          <div class="state__item-circle"></div>
+          <div class="state__item-title">Стан4</div>
+        </li>
+        <li class="state__item">
+          <div class="state__item-circle"></div>
+          <div class="state__item-title">Стан5</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="info">
+  <div class="container">
+    <div class="info__wrapper">
+      <div class="info__data">
+        <h3 class="info__data-title">Information</h3>
+        <div class="info__data-inner">
+          <div class="info__data-number">
+            <p>Info Number:</p>
+            <span>903049</span>
+          </div>
+          <div class="info__data-place">
+            <p>Pick up Place:</p>
+            <span>Sweden</span>
+          </div>
+        </div>
+      </div>
+      <div class="info__state">
+        <div class="info__state-inner">
+          <h3 class="info__state-title">We are here</h3>
+          <h4 class="info__state-subtitle">Long time to go</h4>
+        </div>
+        <img
+          class="info__state-img"
+          src="./images/svg/truck.png"
+          alt="State."
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order">
+  <div class="container">
+    <div class="order__wrapper">
+      <h2 class="order__title">Перезамовте Багаж</h2>
+      <form class="order__form" action="#" method="post">
+        <div class="order__field">
+          <label class="order__field-label" for="select1">Дропдаун</label>
+          <select class="order__field-select" name="select1" id="select1">
+            <option value="" disabled selected>Select option</option>
+            <option value="1">Option1</option>
+            <option value="2">Option2</option>
+            <option value="3">Option3</option>
+          </select>
+        </div>
+        <div class="order__field">
+          <label class="order__field-label" for="select2">Дропдаун</label>
+          <select class="order__field-select" name="select2" id="select2">
+            <option value="" disabled selected>Select option</option>
+            <option value="1">Option1</option>
+            <option value="2">Option2</option>
+            <option value="3">Option3</option>
+          </select>
+        </div>
+        <button class="order__submit" type="submit">Done</button>
+      </form>
+    </div>
+  </div>
+</section>

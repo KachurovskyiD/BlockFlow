@@ -1,0 +1,81 @@
+.info {
+  &__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(300px, 366px);
+    gap: 1.25rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__data-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6875rem;
+    margin-bottom: 1.4375rem;
+  }
+
+  &__data-number {
+    margin-bottom: 0.75rem;
+  }
+
+  &__data-number,
+  &__data-place {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: #1b1b1b;
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+
+    span {
+      color: $darkGreyColor;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__data,
+  &__state {
+    flex: 1 0 auto;
+    border-radius: 12px;
+    background: $whiteColor;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 1.25rem 1.4375rem 0.5rem 1.0625rem;
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    @include tablet {
+      gap: 6.875rem;
+    }
+  }
+
+  &__state-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__state-title {
+    color: $accentColor;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    margin-bottom: 0.375rem;
+  }
+
+  &__state-subtitle {
+    color: $accentColor;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
